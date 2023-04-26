@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function Profilepic() {
     return (
-        <section className="w-full mx-auto ">
+        <section className=" mx-auto p-5">
             <Image 
             className="border-4"
             src="/images/Running.png" 
-            width={300} 
-            height={400}
-            alt="photo of Alejandra running "/>
+            width={200} 
+            height={300}
+            alt="photo of Alejandra running"/>
         </section>
     )
 }

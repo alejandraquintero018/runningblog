@@ -1,5 +1,16 @@
-
+import Link from "next/link";
 
 export default function Page() {
-  return <h1> Hello, I am Alejandra Quintero</h1>;
+
+  return
+  <div>
+
+    <h1 className="mx-auto"> I am Alejandra Quintero, a mother, runner and web developer. 
+    I built this page using NEXTjs </h1>;
+
+    <Link href="/veganism" > </Link>
+
+
+  </div>
+
 }

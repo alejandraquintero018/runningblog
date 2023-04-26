@@ -1,10 +1,12 @@
 import './globals.css'
 import Navbar from './Components/Navbar'
 import Profilepic from './Components/Profilepic'
+import Footer from './Components/Footer'
+
 
 export const metadata = {
-  title: "That one Vegan Running Mom ",
-  description: 'build by Alejandra Quintero ',
+  title: "That one Vegan Running Mom",
+  description: 'built by Alejandra Quintero ',
 }
 
 export default function RootLayout({
@@ -13,12 +15,23 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className=' mx-auto flex justify-between flex-col bg-zinc-700'>
+
+    <html lang="en"> 
+  
+      <body className=' bg-orange-100 container mx-auto flex justify-between place-content-between flex flex-col'>
+
+
         <Navbar />
         <Profilepic/>
         
-        {children}</body>
+        {children}
+
+        <section className='place-items-baseline'> <Footer/> </section>
+
+       
+        
+        </body>
+
     </html>
   )
 }
